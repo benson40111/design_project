@@ -1,0 +1,154 @@
+@font-face{
+    font-family:"Segoe UI";
+    src: url(../fonts/segoeui.ttf);
+}
+*{
+	/*border: solid 1px blue;*/
+	font-family: "Segoe UI","微軟正黑體";
+}
+html,body{
+	position:relative;
+	width: 100%;
+	height: 130%;
+	margin:0px;
+	padding:0px;
+	background: linear-gradient(90deg, #759736 2%, #7ED183 75%); 
+	margin-top:50px;
+	overflow: hidden;
+}
+/*包圍的元素置中*/
+.center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/*包圍的元素垂直排列|*/
+/*                  ˇ*/
+.column{
+	display: flex;
+	flex-direction: column;
+}
+/*包圍的元素水平排列 ->*/
+.row{
+	display: flex;
+	flex-direction: row;
+}
+
+/*Story*/
+#topImg{
+	width: 100vw;
+	height: 150px;
+}
+.topImg{
+	margin-top:50px;
+}
+
+#Story{
+	height: 1350px;
+	position: relative;
+}
+.titleCss{
+	width: 65vw;
+	background: white;
+	color: #708b33;
+	border: solid 5px #708b33;
+	font-size: 50px;
+	border-radius: 60px;
+	padding: 40px 15px;
+	position: relative;
+	top:100px;
+	left:50%;
+	transform: translateX(-50%);
+}
+.but-i{
+	color: white;
+	font-size: 20vw;
+}
+.left{
+	position:absolute;
+	font-size: 1cm;
+	top: 35%;
+	left: 0px;
+	z-index: 1000
+}
+.right{
+	position:absolute;
+	font-size: 1cm;
+	top: 35%;
+	right: 0px;
+	z-index: 1000
+}
+.sliderDiv{
+	position: absolute;
+	top: 150px;
+	width:100%;
+	height: auto%;
+}
+.sliderDiv_A{ /*前*/
+	/*display: flex;
+	justify-content: center;*/
+	left: -85%;
+	/*left: 25%;
+	transform: translateX(-12.5%);*/
+	z-index: 800;
+}
+.sliderDiv_main{ /*中*/
+	/*display: flex;
+	justify-content: center;*/
+	/*left: 25%;
+	transform: translateX(-12.5%);*/
+	z-index: 900
+}
+.sliderDiv_B{ /*後*/
+	/*display: flex;
+	justify-content: center;*/
+	left: 85%;
+	/*left: 25%;
+	transform: translateX(-12.5%);*/
+	z-index: 800;
+}
+.sliderStoryOut{
+	position: relative;
+	top: 200px;
+	width:80%;
+	height: auto;
+	background: rgba(255,255,255,0.5);
+	display: block;
+	padding: 100px 0px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+img.pic{
+	width:80%;
+	height: auto;
+	max-height:500px;
+	
+}
+.slideDate{
+	display: flex;
+	justify-content: center;
+	position: relative;
+	top: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 50px;
+	font-size: 36px;
+	
+}
+.sliderWord{
+	display: flex;
+	justify-content: center;
+	position: relative;
+	margin: 40px 0px 0px 0px;
+	width: 100%;
+	/*max-height: 25%;*/
+	font-size: 36px;
+}
+p.Word{
+	width: 85%;
+	height: auto;
+	text-align:center;
+}
+
+

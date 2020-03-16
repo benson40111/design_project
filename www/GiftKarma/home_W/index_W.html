@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>GiftKarma - Guide</title>
+  <link rel="Shortcut Icon" type="image/x-icon" href="../icon.ico" />
+  <script src="../vendor/jquery/jquery-3.2.1.min.js"></script>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+	<div id="Idea">
+	  <div class="line-top"></div>
+	  <div class="pjNameE">Gift Karma</div>
+	  <div class="pjNameC">傳善計畫</div>
+	  <div class="wordItr">當我能用一個行動，給你我的支持與協助......<br>當我在無助之餘，也能承接由你而來的幫助與關心......<br>就在付出與接受的當下，我與你..重新撰寫了一段新的章節.....</div>
+	  <div class="btn btnGetQR">取得虛擬代幣</div>
+	  <!--<div class="btn btnGetIdea">Gift Karma理念</div>-->
+	</div>
+	<div id="Vtoken" >
+		<img class="LOGO" src="img/LOGOIcon.png" />
+		<img class="V0001" src="img/V0001.png" />
+	</div>
+	<div class="Bottom">
+		<p>歡迎與IMDR聯繫： imdr@gemail.yuntech.edu.tw</p>
+	</div>
+</body>
+<script>
+	$(document).ready(function(){
+		
+		var w = $(window).width();
+	if( w < 1000 ){
+		location.replace("http://www.imdr.yuntech.edu.tw/GiftKarma/home_M/index_M.html")
+	  }
+	});
+	$('.btnGetQR').click(function(){
+		$('.V0001').animate({opacity:"1",top:"+80px"},2000);
+		//$('.V0001').css('transition', 'all 1s ease-out');
+	});
+	</script>
+</html>
